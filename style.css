@@ -1,0 +1,64 @@
+.out-out-wrap {
+  text-align: center;
+}
+
+.out-wrap {
+  width: 300px;
+  background-color: #ebeef1;
+  text-align: center;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.colorBox {
+  width: 260px;
+  height: 260px;
+  display: inline-block;
+  background-color: #709eb0;
+  margin: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+/* 이렇게 하면 폰트에서만 hover가 된다.
+.colorBox > .colorFont:hover {
+  opacity: 1;
+}
+*/
+
+.colorBox:hover .colorFont {
+  opacity: 1;
+}
+
+.colorFont {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 220px;
+  background-color: #588291;
+  padding: 5px 10px;
+  color: white;
+}
+
+.btn {
+  background-color: #ebeef1;
+  border-radius: 10px;
+  border: gray 2px solid;
+  color: black;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+  margin: auto auto 20px 20px;
+}
+
+.container {
+  flex-wrap: nowrap;
+}
+
+.date {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  line-height: 46.5px;
+}
